@@ -5,7 +5,7 @@ export const dataContext = createContext();
 // eslint-disable-next-line react/prop-types
 export default function AppContext({children}){
 
-    const [loading, setLoading] = useState(false)
+    const [loading, setLoading] = useState(true)
 
     
     const value = {
