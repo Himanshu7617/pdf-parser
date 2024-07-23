@@ -2,4 +2,12 @@
 
 # structure
 
-1. 
+|--pdf-parser  
+            |--backend
+                      |--backend
+            |--frontend
+                       |--public 
+                       |--src
+                             |-- context
+                             |--screens
+                             |--components
