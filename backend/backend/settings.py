@@ -33,12 +33,12 @@ ALLOWED_HOSTS = []
 INSTALLED_APPS = [
     'django.contrib.admin',
     'django.contrib.auth',
-    #corsheaders
-    'corsheaders',
     'django.contrib.contenttypes',
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    #corsheaders
+    'corsheaders',
 
 ]
 # adding external apps that we created for our project 
@@ -51,6 +51,7 @@ INSTALLED_APPS += EXTERNAL_APPS
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
+    #corsheaders related 
     'corsheaders.middleware.CorsMiddleware',
     'django.middleware.common.CommonMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
@@ -138,3 +139,4 @@ CORS_ALLOWED_ORIGINS = [
    
     "http://localhost:5173"
 ]
+CORS_ALLOW_ALL_ORIGIN = True

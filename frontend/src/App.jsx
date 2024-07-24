@@ -1,22 +1,21 @@
-import { useEffect } from "react"
+import { useContext, useEffect } from "react";
+import HomeScreen from "./screens/homeScreen/HomeScreen";
+import { dataContext } from "./context/AppContext";
 
 const App = () => {
-  const baseurl = 'http://127.0.0.1:8000/';
+  
 
-  const fetchdata = async () => {
-    const response = await fetch(`${baseurl}home/`);
-    const result = await response.json();
-    console.log(result);
-  }
+  //getting all required functions and variables from context
+  const {files, sendFiles} = useContext(dataContext)
 
-  useEffect(() => {
-    fetchdata()
-
-
-  }, [baseurl])
+  //sending the files into the backend
+  useEffect(()=>{
+    files.length > 0 && sendFiles();
+  },[files]);
+  
   return (
     <div>
-      pdf parser
+      <HomeScreen></HomeScreen>
     </div>
   )
 }

@@ -1,3 +1,29 @@
-*{
-    margin: 0%;
+.homescreen-master-screen{
+    height: 100vh;
+    background-color: #01110A;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.input-container{
+    height: 80vh;
+    width: 40%;
+    background-color: aliceblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+.input-container > input[type='file']::file-selector-button{
+    opacity: 1;
+    cursor: pointer;
+    height: 5rem;
+    background: none;
+    border: none;
+    outline: none;
+}
+
+.database-container{
+    height: 80vh;
+    width: 40%;
 }
