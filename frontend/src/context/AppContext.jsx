@@ -18,19 +18,19 @@ export default function AppContext({children}){
     const sendFiles = async()=>{
         try {
             //creating a formdata
-            const formdata = new FormData();
+            // const formdata = new FormData();
 
             //storing the files in the form data
-            files.forEach((file)=>{
-                formdata.append('fileSet',file);
-            })
+            // files.forEach((file)=>{
+            //     formdata.append('fileSet',file);
+            // })
 
             const response = await fetch(`${baseURL}fileInput/`,{
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
                 },
-                body : formdata
+                body : JSON.stringify(files)
             })
             const result = await response.json();
             console.log(result);

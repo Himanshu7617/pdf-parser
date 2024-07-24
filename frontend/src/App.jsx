@@ -11,6 +11,7 @@ const App = () => {
   //sending the files into the backend
   useEffect(()=>{
     files.length > 0 && sendFiles();
+    console.log(files)
   },[files]);
   
   return (

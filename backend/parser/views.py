@@ -15,10 +15,8 @@ def fileInput(request):
     try:
         if request.method == "POST":
             #trying to access files 
-            files = request.FILES.getlist('fileSet')  
-
-            print(files)
-            return JsonResponse({"message":len(files)})
+            print(request)
+            return JsonResponse({"message":"k"})
         
     except (KeyError, ValueError):
         return JsonResponse({"message":"invalid method"})

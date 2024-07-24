@@ -1,26 +1,44 @@
 .homescreen-master-screen{
-    height: 100vh;
+    min-height: 100vh;
+    height: auto;
+    padding: 1rem;
     background-color: #01110A;
     display: flex;
     justify-content: space-around;
     align-items: center;
 }
-.input-container{
+.form-container{
     height: 80vh;
     width: 40%;
     background-color: aliceblue;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    padding: 2rem;
     overflow: hidden;
+    border-radius: 10px;
 }
-.input-container > input[type='file']::file-selector-button{
-    opacity: 1;
+.wrapper{
+    height: 16rem;
+    width: 27rem;
+    border: 1px dashed #01110A;
     cursor: pointer;
-    height: 5rem;
-    background: none;
-    border: none;
-    outline: none;
+    position: relative;
+    border-radius: 10px;
+}
+.wrapper>p{
+    font-size: 1.5rem;
+    position: absolute;
+    left:25%;
+    bottom:1rem;
+    font-family: sans-serif;
+}
+.wrapper > svg{
+    height: 10rem;
+    width: 10rem;
+    position: absolute;
+    left:30%;
+    top:10%;
+}
+.wrapper > input{
+    display: none;
 }
 
 .database-container{
