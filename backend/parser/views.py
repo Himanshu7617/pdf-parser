@@ -14,9 +14,9 @@ def home(request):
 def fileInput(request):
     try:
         if request.method == "POST":
-            #trying to access files 
-            print(request)
-            return JsonResponse({"message":"k"})
+            #trying to access files but failing so badly
+            #god help me
+            return JsonResponse({"message":"successfully"})
         
     except (KeyError, ValueError):
         return JsonResponse({"message":"invalid method"})

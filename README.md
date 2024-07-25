@@ -13,12 +13,20 @@
                                        |--homeScreen
                                                     |--HomeScreen.jsx
                                                     |--HomeScreen.css
-                                       |--loginScreen
-                                                    |--LoginScreen.jsx
-                                                    |--LoginScreen.css
                              |--components
 
 
-OBJECTIVE: The basic idea to create a api through our backend which will handle the entire functioning of pdf parsing and then hit that url through our frontend with our react code
+FRONTEND: reactjs
+BACKEND: django
+
+STRUCTURE:
+backend project name = backend
+backend app (inside project) = parser
+
+
+ISSUES:
+1. I am sending the files with a post request, they are getting stored in the 'files' variable in my react context but i am not able to access them in the backend, even though its not showing any error
+
+
 
 
